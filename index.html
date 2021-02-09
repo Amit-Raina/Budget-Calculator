@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+        body{
+            background-image: linear-gradient(to right, rgba(85, 61, 61, 0), rgba(255,0,0,1));
+        }
+
+        .low{
+            position: absolute;
+            left: 40px;
+            top: 600px;
+        }
+
+        .lowBud{
+            position: absolute;
+            left: 40px;
+            top: 550px;
+        }
+
+        .lowBal{
+            position: absolute;
+            left: 40px;
+            top: 650px;
+        }
+
+        li{
+            font-size: 16px;
+            font-family: Tahoma, Verdana, sans-serif;
+            font-weight: bold;
+        }
+        
+        .lef {
+            float: left;
+        }
+
+        .rig {
+            float:right;
+        }
+  
+        .center {
+            margin: auto;
+            width: 50%;
+        }
+
+        .button {
+            background-color: #252121;
+            border: none;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family:"font-family: Georgia, serif;" ;
+            margin: 4px 2px;
+        }
+        .button5 {border-radius: 40%;}
+
+</style>
+<body>
+    <center>
+        <h1 style="font-family: Georgia, serif;">Budget Calculator</h1>
+        <form action="">
+ 
+<br>	 
+       <input type="number" placeholder="Budget (in Rs)" id="budget" style="font-size: larger;">
+<br>
+<br>
+        <input type="text" placeholder="Item Name" id="items" style="font-size: larger;">
+<br>
+<br>
+        <input type="number" placeholder="Price (in Rs)" id="price" style="font-size: larger;">
+<br>
+<br>
+        <input type="button" value="Add Item" id="submit" style="font-size: larger;" class=" button button5">
+    </form>
+<br>
+    </center>
+
+    <div class="center">
+        <div class="lef">
+            <h2 style="font-family: Georgia, serif;">Items</h2>
+                <ol id="main-list">
+    
+                </ol>
+        </div>
+        <div class="rig">
+            <h2 style="font-family: Georgia, serif;">Price</h2>
+                <ul id="cost-list">
+    
+                </ul>
+        </div>
+    </div> 
+
+    <h2 id="budShow" style="font-family: Georgia, serif;" class="lowBud">Budget : Rs 0</h2>
+    <h2 id="tot" style="font-family: Georgia, serif;" class="low">To be Paid : Rs 0</h2>
+    <h2 id="bal" style="font-family: Georgia, serif;" class="lowBal">Balance : Rs 0</h2>
+
+</body>
+<script src="index.js"></script>
+</html>
